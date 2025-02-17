@@ -1,0 +1,32 @@
+.tab-view {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Changed to take full height of the viewport */
+  width: 100%;
+}
+
+.tab-content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+}
+
+.tab-button {
+  flex-grow: 1;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit; /* Ensure font matches the rest of the app */
+  font-size: inherit; /* Ensure font size matches the rest of the app */
+}
+
+.tab-button.active {
+  background-color: #ccc;
+}
